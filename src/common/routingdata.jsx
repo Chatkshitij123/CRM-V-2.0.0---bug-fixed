@@ -96,6 +96,8 @@ import Todolist from "../component/pagecomponent/todolist/todolist";
 import Widgets from "../component/widgets/widgets";
 import Remixicons from "../component/icon/remixicons/remixicons";
 import Tablericons from "../component/icon/tablericons/tablericons";
+import Project from "../component/element/project/project";
+import Task from "../component/element/task/task";
 
 
 //component path END
@@ -121,6 +123,9 @@ export const RouteData = [
 
     { path: `${import.meta.env.BASE_URL}widgets`, element: <Widgets /> , title: ''},
 
+    // {/* Element content */}
+    { path: `${import.meta.env.BASE_URL}element/project`, element: <Project /> , title: ''},
+    { path: `${import.meta.env.BASE_URL}element/task`, element: <Task /> , title: ''},
     // {/* Component content */}
 
     { path: `${import.meta.env.BASE_URL}components/accordion`, element: <Accordion /> , title: ''},
@@ -140,7 +145,7 @@ export const RouteData = [
     { path: `${import.meta.env.BASE_URL}components/toasts`, element: <Toasts /> , title: ''},
 
     // {/* Component content */}
-
+    
     { path: `${import.meta.env.BASE_URL}elements/breadcrumbs`, element: <Breadcrumbs /> , title: ''},
     { path: `${import.meta.env.BASE_URL}elements/columns`, element: <Columns /> , title: ''},
     { path: `${import.meta.env.BASE_URL}elements/grids`, element: <Grids /> , title: ''},
@@ -295,8 +300,12 @@ export const SearchData = [
     { path: `${import.meta.env.BASE_URL}components/spinners`, element: <Spinners /> , title: 'spinners'},
     { path: `${import.meta.env.BASE_URL}components/toasts`, element: <Toasts /> , title: 'toasts'},
 
-    // {/* Component content */}
+     // {/* Element content */}
+     { path: `${import.meta.env.BASE_URL}element/project`, element: <Project /> , title: ''},
+     { path: `${import.meta.env.BASE_URL}element/task`, element: <Task /> , title: ''},
 
+    // {/* Component content */}
+    
     { path: `${import.meta.env.BASE_URL}elements/breadcrumbs`, element: <Breadcrumbs /> , title: 'breadcrumbs'},
     { path: `${import.meta.env.BASE_URL}elements/columns`, element: <Columns /> , title: 'columns'},
     { path: `${import.meta.env.BASE_URL}elements/grids`, element: <Grids /> , title: 'grids'},

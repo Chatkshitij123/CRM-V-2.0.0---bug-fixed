@@ -28,6 +28,7 @@ const IconsSvg = <i className="ri-camera-lens-line side-menu__icon"></i>
 
 const AuthenticationSvg = <i className="ri-error-warning-line side-menu__icon"></i>
 
+const ElementSvg = <i className="ri-cpu-line side-menu__icon"></i>
 
 
 export const MenuItems = [
@@ -304,6 +305,13 @@ export const MenuItems = [
 			},
 		]
 	},
-
+	{ menutitle: "Element", Items:[
+		{ id: 163, icon: ElementSvg, title: "Element", type: "sub", active: false, selected: false, children: [
+			{ id: 164, path: `${import.meta.env.BASE_URL}element/project`, type: "link", active: false, selected: false, title: "Project" },
+			{ id: 165, path: `${import.meta.env.BASE_URL}element/task`, type: "link", active: false, selected: false, title: "Task" },	
+	]
+}
+]
+	}
 ];
 export default MenuItems
